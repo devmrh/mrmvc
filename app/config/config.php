@@ -15,4 +15,4 @@
   define('URLROOT', 'http://mrmvc.com');
 
   //define site name
-  define('SITENAME','mrmvc');
+  define('SITENAME','Footballer');

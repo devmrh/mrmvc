@@ -1,0 +1,29 @@
+#app {
+  margin-top: 75px;
+}
+
+.edit-title {
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 27px;
+  color: #605e5c;
+}
+.edit-form {
+  padding: 17px;
+  background: white;
+  border: 1px solid #e0e0e0;
+}
+
+.form-group > input,.form-group > textarea {
+  font-size: 14px;
+}
+.edit-container{
+  padding: 10px;
+}
+.reg-form-container{
+  margin-top: 70px;
+}
+.login-form-container{
+  margin-top: 40px;
+}

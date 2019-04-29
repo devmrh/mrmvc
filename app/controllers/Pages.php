@@ -1,20 +1,24 @@
 <?php
   class Pages extends Controller{
+
+    private $postModel;
+
     public function __construct()
     {
-      
+      $this->postModel = $this->model('PostModel');
     }
   public function index()
   {
  
-    //Set Data
-    $data = [
-      'title' => 'Welcome To SharePosts',
-      'description' => 'Simple social network built on the TraversyMVC PHP framework'
-    ];
+    $posts = $this->postModel->getAllPosts();
 
-    // Load homepage/index view
-    
-    $this->view('pages/index', $data);
+
+    $this->view('pages/index', $posts);
   }
+
+  public function edit($id){
+
+    $this->view('pages/edit', $id);
+  }
+
   }

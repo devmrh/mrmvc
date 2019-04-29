@@ -1,11 +1,11 @@
 <?php
-// main Controller class
 
-class Controller{ 
- 
+class Controller{
+
+
   public function model($model){
-
-    require_once '..app/models/'.$model.'.php';
+   // die($model);
+    require_once '../app/models/'.$model.'.php';
     return new $model;
   }
 
